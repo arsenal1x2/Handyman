@@ -10,26 +10,30 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var nameView: EmailView!
+    @IBOutlet weak var emailView: EmailView!
+    @IBOutlet weak var navigationBarView: NavigationBarView!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var rePasswordView: PasswordView!
+    @IBOutlet weak var passwordView: PasswordView!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+        initView()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func clickSignUpButton(_ sender: Any) {
+        let vc = ActiveNewAccountViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func initView() {
+        navigationBarView.delegate = self
+        signUpButton.applyCornerRadius()
+        passwordView.titleLabel.text = "Password"
+        nameView.titleLabel.text = "Your Name"
+        rePasswordView.titleLabel.text = "Re - Password"
+        nameView.iconImageView.image = UIImage(named: "person")
     }
-    */
-
 }

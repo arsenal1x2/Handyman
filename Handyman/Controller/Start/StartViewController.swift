@@ -10,26 +10,26 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var continueAsCustomerButton: UIButton!
+    @IBOutlet weak var continueAsHandymanButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        continueAsCustomerButton.applyCornerRadius()
+        continueAsHandymanButton.applyCornerRadius()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func clickContinueAsHandymanButton(_ sender: Any) {
+        pushLoginViewController()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func clickContinueasCustomerButton(_ sender: Any) {
+        pushLoginViewController()
     }
-    */
-
+    
+    func pushLoginViewController() {
+        let vc = RegisterViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

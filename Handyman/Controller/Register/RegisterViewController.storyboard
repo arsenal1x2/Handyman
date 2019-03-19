@@ -82,6 +82,9 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" red="0.17254901959999999" green="0.64313725489999995" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="clickSignUpButton:" destination="HgT-y9-RbP" eventType="touchUpInside" id="17D-g4-nbO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -201,29 +204,13 @@
                     <connections>
                         <outlet property="loginButton" destination="5Wm-66-5Ya" id="XI1-Me-Gq9"/>
                         <outlet property="loginFacebookButton" destination="o0m-q6-4b5" id="Vcw-PP-OPb"/>
+                        <outlet property="navigationBarView" destination="Akb-pc-2xt" id="JZs-zc-Opb"/>
                         <outlet property="signUpButton" destination="zwn-kp-aWW" id="YqW-TK-wwt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oge-ho-FnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888.8" y="-194.75262368815595"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="BtS-7y-OSE">
-            <objects>
-                <navigationController storyboardIdentifier="RootViewController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aJr-gT-ACG" customClass="RootViewController" customModule="Handyman" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pxy-Ev-mFj">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HgT-y9-RbP" kind="relationship" relationship="rootViewController" id="QQy-Rq-lqb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="myg-gH-Guu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="949.60000000000002" y="-194.75262368815595"/>
         </scene>
     </scenes>
     <resources>

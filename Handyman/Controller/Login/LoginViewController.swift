@@ -9,10 +9,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var emailView: EmailView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var navigationBarView: NavigationBarView!
-    @IBOutlet weak var passwordView: UIView!
-    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: PasswordView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,23 +22,16 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func clickForgotPasswordButton(_ sender: Any) {
+        let vc = ForgotPasswordViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
     func initView() {
         loginButton.applyCornerRadius()
-        emailView.applyCornerRadius()
-        passwordView.applyCornerRadius()
         navigationBarView.delegate = self
-    }
-
-}
-
-extension LoginViewController: NavigationBarDelegate {
-    func navigationBarDidClickedBackButton() {
-        self.navigationController?.popViewController(animated: true)
+        passwordView.titleLabel.text = "Password"
     }
 }
+
+

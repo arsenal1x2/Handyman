@@ -9,10 +9,12 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+   
+    @IBOutlet weak var navigationBarView: NavigationBarView!
     @IBOutlet weak var loginFacebookButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var signUpButton: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -20,18 +22,17 @@ class RegisterViewController: UIViewController {
     }
     
     private func initView() {
-        loginFacebookButton.layer.cornerRadius = loginFacebookButton.frame.height/6.0
-        loginFacebookButton.clipsToBounds = true
+        loginFacebookButton.applyCornerRadius()
+        navigationBarView.delegate = self
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+   
     @IBAction func clickLoginButton(_ sender: Any) {
         let vc = LoginViewController.instantiateFromStoryboard()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
+    @IBAction func clickSignUpButton(_ sender: Any) {
+        let vc = SignUpViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

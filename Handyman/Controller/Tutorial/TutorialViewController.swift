@@ -10,26 +10,31 @@ import UIKit
 
 class TutorialViewController: UIViewController {
 
+    
+    @IBOutlet weak var tutorialLabel: UILabel!
+    @IBOutlet weak var tutorialView: UIView!
+    @IBOutlet weak var tutorialImageView: UIImageView!
+    @IBOutlet weak var buttonSkip: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViews()
 
         // Do any additional setup after loading the view.
     }
+    
+    private func initViews() {
+        tutorialView.applyCornerRadius()
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func clickButtonSkip(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "StartViewController", bundle: nil)
+        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        self.present(viewcontroller, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func configure(imageName: String, tutorialTitle: String) {
+        tutorialImageView.image = UIImage(named: imageName)
+        tutorialLabel.text = tutorialTitle
     }
-    */
 
 }
