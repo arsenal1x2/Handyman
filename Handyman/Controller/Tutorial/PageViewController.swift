@@ -8,9 +8,10 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController,UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class PageViewController: UIPageViewController, UIPageViewControllerDelegate {
     
     private lazy var pages: [TutorialViewController] = createViewControllers()
+    private(set) lazy var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -18,9 +19,31 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         let firstViewController =  pages[0]
         self.setViewControllers([firstViewController], direction:
             .reverse, animated: true, completion: nil)
-        
+        configurePageControl()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func configurePageControl() {
+        pageControl = UIPageControl(frame: CGRect(x: 0,y:self.view.frame.midY + 300,width: self.view.bounds.width,height: 100))
+        self.pageControl.numberOfPages = pages.count
+        self.pageControl.currentPage = 0
+        self.pageControl.tintColor = UIColor.black
+        self.pageControl.pageIndicatorTintColor = UIColor.white
+        self.pageControl.currentPageIndicatorTintColor = UIColor(hexString: "2CA4BF")
+        self.pageControl.isEnabled = true
+        pageControl.addTarget(self, action: #selector(pageControlDidChange), for: .valueChanged)
+        self.view.addSubview(pageControl)
+    }
+    
+    @objc func pageControlDidChange() {
+        let vc = pages[pageControl.currentPage]
+        self.setViewControllers([vc], direction: .reverse, animated: true, completion: nil)
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func createAndConfigureViewController(imageName: String, title: String) -> TutorialViewController {
@@ -37,18 +60,16 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         let arrVC = [tutorialVC1, tutorialVC2, tutorialVC3]
         return arrVC
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+extension PageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let indexViewController = pages.index(of: viewController as! TutorialViewController) else {
             return nil
         }
-        var previousIndex = indexViewController - 1
-        if (previousIndex < 0) { previousIndex = pages.count - 1 }
+        let previousIndex = indexViewController - 1
+        if (previousIndex < 0) { return nil }
         if (previousIndex >= pages.count) { return nil }
         return pages[previousIndex]
     }
@@ -57,13 +78,10 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource, U
         guard let indexViewController = pages.index(of: viewController as! TutorialViewController) else {
             return nil
         }
-        var nextIndex = indexViewController + 1
-        if (nextIndex > pages.count) { return nil }
-        if (nextIndex == pages.count) { nextIndex = 0 }
+        let nextIndex = indexViewController + 1
+        if (nextIndex >= pages.count) { return nil }
         return pages[nextIndex]
     }
-    
-
 }
 
 

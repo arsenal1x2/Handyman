@@ -12,6 +12,11 @@ class StartViewController: UIViewController {
 
     @IBOutlet weak var continueAsCustomerButton: UIButton!
     @IBOutlet weak var continueAsHandymanButton: UIButton!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         continueAsCustomerButton.applyCornerRadius()

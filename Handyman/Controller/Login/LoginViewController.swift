@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
         loginButton.applyCornerRadius()
         navigationBarView.delegate = self
         passwordView.titleLabel.text = "Password"
+        self.addNotificationKeyBoard()
     }
 }
 

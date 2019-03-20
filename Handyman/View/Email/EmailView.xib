@@ -19,6 +19,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailView" customModule="Handyman" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="iN5-Kp-Mw6"/>
+                <outlet property="emailTextField" destination="Ore-df-au6" id="PfF-94-4G7"/>
                 <outlet property="iconImageView" destination="z0i-Kk-Mau" id="R0c-Cm-iRa"/>
                 <outlet property="mainView" destination="YIk-Cy-PMN" id="6q2-mK-lFM"/>
                 <outlet property="titleLabel" destination="NSN-hE-hsp" id="f2z-DY-HOj"/>
@@ -66,11 +67,11 @@
                                                 <constraint firstItem="z0i-Kk-Mau" firstAttribute="centerX" secondItem="qTH-46-4Zg" secondAttribute="centerX" id="afA-eC-GS1"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lethanhtung9a@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-df-au6">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lethanhtung9a@gmail.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-df-au6">
                                             <rect key="frame" x="43" y="0.0" width="302" height="36"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                         </textField>
                                     </subviews>
                                     <constraints>

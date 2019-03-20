@@ -14,6 +14,7 @@ class EmailView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var emailTextField: UITextField!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,6 +28,7 @@ class EmailView: UIView {
     
     private func initView() {
         _ = loadViewFromNib()
+        emailTextField.delegate = self
         self.backgroundColor = UIColor.clear
         addSubview(contentView)
         contentView.frame = self.bounds

@@ -24,6 +24,7 @@ class RegisterViewController: UIViewController {
     private func initView() {
         loginFacebookButton.applyCornerRadius()
         navigationBarView.delegate = self
+        self.addNotificationKeyBoard()
     }
    
     @IBAction func clickLoginButton(_ sender: Any) {

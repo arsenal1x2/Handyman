@@ -14,6 +14,10 @@ class ForgotPasswordViewController: UIViewController {
     @IBOutlet weak var navigationBarView: NavigationBarView!
     @IBOutlet weak var sendButton: UIButton!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -23,5 +27,6 @@ class ForgotPasswordViewController: UIViewController {
     private func initView() {
         navigationBarView.delegate = self
         sendButton.applyCornerRadius()
+        self.addNotificationKeyBoard()
     }
 }

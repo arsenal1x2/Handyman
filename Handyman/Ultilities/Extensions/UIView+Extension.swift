@@ -202,3 +202,10 @@ extension UIView {
         self.clipsToBounds = true
     }
 }
+
+extension UIView: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.endEditing(true)
+        return false
+    }
+}

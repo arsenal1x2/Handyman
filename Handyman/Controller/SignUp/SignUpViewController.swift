@@ -35,5 +35,6 @@ class SignUpViewController: UIViewController {
         nameView.titleLabel.text = "Your Name"
         rePasswordView.titleLabel.text = "Re - Password"
         nameView.iconImageView.image = UIImage(named: "person")
+        self.addNotificationKeyBoard()
     }
 }

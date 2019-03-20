@@ -35,6 +35,7 @@ class PasswordView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mainView.applyCornerRadius()
+        textSecureTextField.delegate = self
     }
 
     @IBAction func clickButtonShowTextSecure(_ sender: Any) {
