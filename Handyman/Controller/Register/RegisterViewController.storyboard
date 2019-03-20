@@ -205,6 +205,7 @@
                         <outlet property="loginButton" destination="5Wm-66-5Ya" id="XI1-Me-Gq9"/>
                         <outlet property="loginFacebookButton" destination="o0m-q6-4b5" id="Vcw-PP-OPb"/>
                         <outlet property="navigationBarView" destination="Akb-pc-2xt" id="JZs-zc-Opb"/>
+                        <outlet property="requimentLabel" destination="y2y-An-230" id="Kxu-hh-DQe"/>
                         <outlet property="signUpButton" destination="zwn-kp-aWW" id="YqW-TK-wwt"/>
                     </connections>
                 </viewController>

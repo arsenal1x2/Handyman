@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController, UIPageViewControllerDelegate {
+class PageViewController: UIPageViewController {
     
     private lazy var pages: [TutorialViewController] = createViewControllers()
     private(set) lazy var pageControl = UIPageControl()
@@ -62,6 +62,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate {
     }
 }
 
+//MARK: PageViewControllerDataSource
 extension PageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -84,4 +85,12 @@ extension PageViewController: UIPageViewControllerDataSource {
     }
 }
 
-
+//MARK: PageViewControllerDelegate
+extension PageViewController: UIPageViewControllerDelegate {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = pages.index(of: pageContentViewController as! TutorialViewController)!
+        
+    }
+}

@@ -10,6 +10,7 @@ import UIKit
 
 class RegisterViewController: UIViewController {
    
+    @IBOutlet weak var requimentLabel: UILabel!
     @IBOutlet weak var navigationBarView: NavigationBarView!
     @IBOutlet weak var loginFacebookButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
@@ -25,6 +26,14 @@ class RegisterViewController: UIViewController {
         loginFacebookButton.applyCornerRadius()
         navigationBarView.delegate = self
         self.addNotificationKeyBoard()
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .normal("Please ")
+            .bold("Login ")
+            .normal("if you have an account. And ")
+            .bold("Signup ")
+            .normal("if you are a new member.")
+        requimentLabel.attributedText = formattedString
     }
    
     @IBAction func clickLoginButton(_ sender: Any) {

@@ -19,6 +19,7 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         continueAsCustomerButton.applyCornerRadius()
         continueAsHandymanButton.applyCornerRadius()
 
