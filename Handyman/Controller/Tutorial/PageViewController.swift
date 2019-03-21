@@ -20,12 +20,11 @@ class PageViewController: UIPageViewController {
         self.setViewControllers([firstViewController], direction:
             .reverse, animated: true, completion: nil)
         configurePageControl()
-
         // Do any additional setup after loading the view.
     }
     
     func configurePageControl() {
-        pageControl = UIPageControl(frame: CGRect(x: 0,y:self.view.frame.midY + 300,width: self.view.bounds.width,height: 100))
+        pageControl = UIPageControl(frame: CGRect(x: 0,y:self.view.frame.midY + 100,width: self.view.bounds.width,height: 100))
         self.pageControl.numberOfPages = pages.count
         self.pageControl.currentPage = 0
         self.pageControl.tintColor = UIColor.black

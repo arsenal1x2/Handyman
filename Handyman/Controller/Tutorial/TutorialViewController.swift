@@ -31,9 +31,8 @@ class TutorialViewController: UIViewController {
     }
 
     @IBAction func clickButtonSkip(_ sender: Any) {
-        let storyboard = UIStoryboard.init(name: "StartViewController", bundle: nil)
-        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "RootViewController")
-        self.present(viewcontroller, animated: true, completion: nil)
+        
+        self.dismiss(animated: true)
     }
     
     func configure(imageName: String, tutorialTitle: String) {

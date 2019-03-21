@@ -69,6 +69,8 @@
 		367E09EE223B4CD80095680E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E09ED223B4CD80095680E /* UIView+Extension.swift */; };
 		367E09F0223B4D8D0095680E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E09EF223B4D8D0095680E /* NSObject+Extension.swift */; };
 		367E09F2223B4DBE0095680E /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E09F1223B4DBE0095680E /* UIVIewController+Extension.swift */; };
+		3686D9EC2243295900123082 /* BaseTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9EB2243295900123082 /* BaseTutorialViewController.swift */; };
+		3686D9EF2243324200123082 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9EE2243324200123082 /* Constants.swift */; };
 		36E170CD223B4EF9007BE333 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */; };
 		36E170CF223B5FE8007BE333 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CE223B5FE8007BE333 /* LoginViewController.swift */; };
 		36E170D1223B618F007BE333 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170D0223B618F007BE333 /* RootViewController.swift */; };
@@ -146,6 +148,8 @@
 		367E09ED223B4CD80095680E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		367E09EF223B4D8D0095680E /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		367E09F1223B4DBE0095680E /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		3686D9EB2243295900123082 /* BaseTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTutorialViewController.swift; sourceTree = "<group>"; };
+		3686D9EE2243324200123082 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		36E170CE223B5FE8007BE333 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		36E170D0223B618F007BE333 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 				3621926A2240874400336445 /* TutorialViewController.storyboard */,
 				3621926C2240875F00336445 /* TutorialViewController.swift */,
 				3621926E224091D400336445 /* PageViewController.swift */,
+				3686D9EB2243295900123082 /* BaseTutorialViewController.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 		367E09EB223B4CB10095680E /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
+				3686D9ED2243322B00123082 /* Constants */,
 				360D705E22423013009F2B5C /* Font */,
 				367E09EC223B4CB90095680E /* Extensions */,
 			);
@@ -350,6 +356,14 @@
 				360D702C224228E4009F2B5C /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3686D9ED2243322B00123082 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3686D9EE2243324200123082 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		36E170D4223B7C1C007BE333 /* Register */ = {
@@ -599,9 +613,11 @@
 			files = (
 				36E170E2223B9B5E007BE333 /* EmailView.swift in Sources */,
 				36E170D8223B7C63007BE333 /* SignUpViewController.swift in Sources */,
+				3686D9EC2243295900123082 /* BaseTutorialViewController.swift in Sources */,
 				36E170D1223B618F007BE333 /* RootViewController.swift in Sources */,
 				36E170CF223B5FE8007BE333 /* LoginViewController.swift in Sources */,
 				367E09F2223B4DBE0095680E /* UIVIewController+Extension.swift in Sources */,
+				3686D9EF2243324200123082 /* Constants.swift in Sources */,
 				36E170EC223BACCC007BE333 /* StartViewController.swift in Sources */,
 				367E09E3223B4A030095680E /* RegisterViewController.swift in Sources */,
 				36305398223A41A80028715F /* ViewController.swift in Sources */,

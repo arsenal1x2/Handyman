@@ -17,11 +17,23 @@ class StartViewController: UIViewController {
         return .lightContent
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         continueAsCustomerButton.applyCornerRadius()
         continueAsHandymanButton.applyCornerRadius()
+        if let isSeenTutorialViewController = UserDefaults.standard.value(forKey: Constants.UserDefaultkeys.IsSeenTutorialViewController) as? Bool, isSeenTutorialViewController {
+            
+        } else {
+            let storyboard = UIStoryboard.init(name: "TutorialViewController", bundle: nil)
+            let viewcontroller = storyboard.instantiateViewController(withIdentifier: "BaseTutorialViewController")
+            self.present(viewcontroller, animated: true, completion: nil)
+        }
 
         // Do any additional setup after loading the view.
     }

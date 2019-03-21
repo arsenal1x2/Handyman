@@ -46,8 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func initRootViewController() {
         
-        let storyboard = UIStoryboard.init(name: "TutorialViewController", bundle: nil)
-        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "PageViewController")
+        let storyboard = UIStoryboard.init(name: "StartViewController", bundle: nil)
+        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "RootViewController")
         window?.rootViewController = viewcontroller
         window?.makeKeyAndVisible()
     }
