@@ -66,8 +66,10 @@ extension UIViewController: NavigationBarDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    @objc func keyboardWillShow() {
-        self.view.frame.origin.y = -300
+    @objc func keyboardWillShow(_ notification: Notification) {
+       
+            self.view.frame.origin.y = -220
+        
     }
     
     @objc func keyboardWillHide() {

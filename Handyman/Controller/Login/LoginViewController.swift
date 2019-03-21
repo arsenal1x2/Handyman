@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailView: EmailView!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var navigationBarView: NavigationBarView!
+    
     @IBOutlet weak var passwordView: PasswordView!
     
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     
     func initView() {
         loginButton.applyCornerRadius()
-        navigationBarView.delegate = self
+        
         passwordView.titleLabel.text = "Password"
         self.addNotificationKeyBoard()
     }

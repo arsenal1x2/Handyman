@@ -12,7 +12,7 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var nameView: EmailView!
     @IBOutlet weak var emailView: EmailView!
-    @IBOutlet weak var navigationBarView: NavigationBarView!
+    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var rePasswordView: PasswordView!
     @IBOutlet weak var passwordView: PasswordView!
@@ -29,7 +29,6 @@ class SignUpViewController: UIViewController {
     }
     
     private func initView() {
-        navigationBarView.delegate = self
         signUpButton.applyCornerRadius()
         passwordView.titleLabel.text = "Password"
         nameView.titleLabel.text = "Your Name"

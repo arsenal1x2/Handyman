@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Payout Table View Controller-->
+        <scene sceneID="tSa-nz-Nga">
+            <objects>
+                <tableViewController storyboardIdentifier="AddPayoutTableViewController" id="D0E-hW-kGv" customClass="AddPayoutTableViewController" customModule="Handyman" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bje-kf-hhf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="yqY-RZ-gea">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="210" id="svl-dN-vUS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svl-dN-vUS" id="KJn-Vz-bvq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsc-ij-FaE" customClass="CardView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="188"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nsc-ij-FaE" firstAttribute="top" secondItem="KJn-Vz-bvq" secondAttribute="topMargin" id="5Ms-B4-77y"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Nsc-ij-FaE" secondAttribute="trailing" id="BEK-eS-yUX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Nsc-ij-FaE" secondAttribute="bottom" id="K80-G8-PIe"/>
+                                                <constraint firstItem="Nsc-ij-FaE" firstAttribute="leading" secondItem="KJn-Vz-bvq" secondAttribute="leadingMargin" id="s1f-37-XAK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="UgF-4J-shS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="O51-EV-dzg">
+                                        <rect key="frame" x="0.0" y="210" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O51-EV-dzg" id="lRc-i4-eFJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aib-B9-VKM" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aib-B9-VKM" firstAttribute="top" secondItem="lRc-i4-eFJ" secondAttribute="topMargin" id="4VU-Zf-PTC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aib-B9-VKM" secondAttribute="bottom" id="B3T-BI-VFC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aib-B9-VKM" secondAttribute="trailing" id="JD1-62-UW7"/>
+                                                <constraint firstItem="aib-B9-VKM" firstAttribute="leading" secondItem="lRc-i4-eFJ" secondAttribute="leadingMargin" id="fXK-GB-AN2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="SZc-07-FuQ">
+                                        <rect key="frame" x="0.0" y="282" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SZc-07-FuQ" id="QzQ-bl-LC4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yU-VE-ZdD" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7yU-VE-ZdD" firstAttribute="leading" secondItem="QzQ-bl-LC4" secondAttribute="leadingMargin" id="fLA-sC-h54"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7yU-VE-ZdD" secondAttribute="trailing" id="gJA-0b-FWp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7yU-VE-ZdD" secondAttribute="bottom" id="oKO-9t-frf"/>
+                                                <constraint firstItem="7yU-VE-ZdD" firstAttribute="top" secondItem="QzQ-bl-LC4" secondAttribute="topMargin" id="rR7-j3-tTk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="JaM-h5-vzu">
+                                        <rect key="frame" x="0.0" y="354" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JaM-h5-vzu" id="kvl-F4-xv5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tkd-oJ-elJ" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Tkd-oJ-elJ" secondAttribute="trailing" id="Ih5-9h-Tmo"/>
+                                                <constraint firstItem="Tkd-oJ-elJ" firstAttribute="leading" secondItem="kvl-F4-xv5" secondAttribute="leadingMargin" id="Luq-eS-J6T"/>
+                                                <constraint firstItem="Tkd-oJ-elJ" firstAttribute="top" secondItem="kvl-F4-xv5" secondAttribute="topMargin" id="OTD-zZ-ZYm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Tkd-oJ-elJ" secondAttribute="bottom" id="kxY-D4-GZ7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="amg-OP-BhX">
+                                        <rect key="frame" x="0.0" y="426" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="amg-OP-BhX" id="iMu-Cs-Y6N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHI-BS-Xss" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qHI-BS-Xss" secondAttribute="trailing" id="AOe-Ya-w3i"/>
+                                                <constraint firstItem="qHI-BS-Xss" firstAttribute="top" secondItem="iMu-Cs-Y6N" secondAttribute="topMargin" id="Ap9-Ra-pmv"/>
+                                                <constraint firstItem="qHI-BS-Xss" firstAttribute="leading" secondItem="iMu-Cs-Y6N" secondAttribute="leadingMargin" id="dJN-Fx-gBn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qHI-BS-Xss" secondAttribute="bottom" id="iwv-Ir-sVI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="5bM-2p-K5p">
+                                        <rect key="frame" x="0.0" y="498" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bM-2p-K5p" id="joA-W9-fet">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSF-lR-MhQ" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mSF-lR-MhQ" firstAttribute="leading" secondItem="joA-W9-fet" secondAttribute="leadingMargin" id="DDt-7Z-jxA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mSF-lR-MhQ" secondAttribute="bottom" id="XNH-qe-Fqr"/>
+                                                <constraint firstItem="mSF-lR-MhQ" firstAttribute="top" secondItem="joA-W9-fet" secondAttribute="topMargin" id="YRr-RA-jdH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mSF-lR-MhQ" secondAttribute="trailing" id="qSc-3m-YvW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="DAq-W4-Z54">
+                                        <rect key="frame" x="0.0" y="570" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DAq-W4-Z54" id="o5J-DZ-gD8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a17-KH-LSr" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="a17-KH-LSr" secondAttribute="trailing" id="YHh-ha-w2B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="a17-KH-LSr" secondAttribute="bottom" id="dXd-zs-9lS"/>
+                                                <constraint firstItem="a17-KH-LSr" firstAttribute="leading" secondItem="o5J-DZ-gD8" secondAttribute="leadingMargin" id="ogX-EP-SNe"/>
+                                                <constraint firstItem="a17-KH-LSr" firstAttribute="top" secondItem="o5J-DZ-gD8" secondAttribute="topMargin" id="yfa-sK-zyZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="CcW-oe-xog">
+                                        <rect key="frame" x="0.0" y="642" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CcW-oe-xog" id="MCJ-es-knq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-1Q-0kJ" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="11" width="343" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E0J-1Q-0kJ" firstAttribute="leading" secondItem="MCJ-es-knq" secondAttribute="leadingMargin" id="Hui-bu-dQM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="E0J-1Q-0kJ" secondAttribute="trailing" id="K95-dK-j5t"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="E0J-1Q-0kJ" secondAttribute="bottom" id="qMD-gS-GbX"/>
+                                                <constraint firstItem="E0J-1Q-0kJ" firstAttribute="top" secondItem="MCJ-es-knq" secondAttribute="topMargin" id="yXS-4J-BmZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="D0E-hW-kGv" id="mBC-oq-qjG"/>
+                            <outlet property="delegate" destination="D0E-hW-kGv" id="GrO-gT-ZnF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Inp-87-Tcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>

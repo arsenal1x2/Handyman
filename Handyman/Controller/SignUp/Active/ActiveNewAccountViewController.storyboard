@@ -82,6 +82,9 @@
                                         <state key="normal" title="Private users (CPR)">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickPrivateUserButton:" destination="RhB-rg-fMg" eventType="touchUpInside" id="Dce-eX-Yux"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epE-EU-d4A">
                                         <rect key="frame" x="0.0" y="57.5" width="208" height="27.5"/>
@@ -90,6 +93,9 @@
                                         <state key="normal" title="Business users (CVR)*">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickBusinessUsersButton:" destination="RhB-rg-fMg" eventType="touchUpInside" id="YUR-8n-Neg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

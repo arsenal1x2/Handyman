@@ -11,7 +11,6 @@ import UIKit
 class RegisterViewController: UIViewController {
    
     @IBOutlet weak var requimentLabel: UILabel!
-    @IBOutlet weak var navigationBarView: NavigationBarView!
     @IBOutlet weak var loginFacebookButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
@@ -24,7 +23,7 @@ class RegisterViewController: UIViewController {
     
     private func initView() {
         loginFacebookButton.applyCornerRadius()
-        navigationBarView.delegate = self
+        
         self.addNotificationKeyBoard()
         let formattedString = NSMutableAttributedString()
         formattedString

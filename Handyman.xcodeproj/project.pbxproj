@@ -49,7 +49,7 @@
 		3621926F224091D400336445 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621926E224091D400336445 /* PageViewController.swift */; };
 		362192732240A2F300336445 /* ActiveNewAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362192722240A2F300336445 /* ActiveNewAccountViewController.storyboard */; };
 		362192752240A30F00336445 /* ActiveNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362192742240A30F00336445 /* ActiveNewAccountViewController.swift */; };
-		362192792240D37600336445 /* AddPayoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362192782240D37600336445 /* AddPayoutViewController.storyboard */; };
+		362192792240D37600336445 /* AddPayoutTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362192782240D37600336445 /* AddPayoutTableViewController.storyboard */; };
 		3621927C2240D3D500336445 /* CustomNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3621927B2240D3D500336445 /* CustomNavigationBarView.xib */; };
 		3621927E2240D3F600336445 /* CustomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621927D2240D3F600336445 /* CustomNavigationBarView.swift */; };
 		362192812240D9DE00336445 /* InformationUserAccountPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362192802240D9DE00336445 /* InformationUserAccountPayView.xib */; };
@@ -71,6 +71,11 @@
 		367E09F2223B4DBE0095680E /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E09F1223B4DBE0095680E /* UIVIewController+Extension.swift */; };
 		3686D9EC2243295900123082 /* BaseTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9EB2243295900123082 /* BaseTutorialViewController.swift */; };
 		3686D9EF2243324200123082 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9EE2243324200123082 /* Constants.swift */; };
+		3686D9F1224366B400123082 /* AddPayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9F0224366B400123082 /* AddPayoutTableViewController.swift */; };
+		3686D9F42243672F00123082 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3686D9F32243672F00123082 /* CardView.xib */; };
+		3686D9F62243674200123082 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9F52243674200123082 /* CardView.swift */; };
+		3686D9F9224376E400123082 /* AddNewPayoutTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3686D9F8224376E400123082 /* AddNewPayoutTableViewController.storyboard */; };
+		3686D9FB2243770200123082 /* AddNewPayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9FA2243770200123082 /* AddNewPayoutTableViewController.swift */; };
 		36E170CD223B4EF9007BE333 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */; };
 		36E170CF223B5FE8007BE333 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CE223B5FE8007BE333 /* LoginViewController.swift */; };
 		36E170D1223B618F007BE333 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170D0223B618F007BE333 /* RootViewController.swift */; };
@@ -122,7 +127,7 @@
 		3621926E224091D400336445 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		362192722240A2F300336445 /* ActiveNewAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActiveNewAccountViewController.storyboard; sourceTree = "<group>"; };
 		362192742240A30F00336445 /* ActiveNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNewAccountViewController.swift; sourceTree = "<group>"; };
-		362192782240D37600336445 /* AddPayoutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPayoutViewController.storyboard; sourceTree = "<group>"; };
+		362192782240D37600336445 /* AddPayoutTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPayoutTableViewController.storyboard; sourceTree = "<group>"; };
 		3621927B2240D3D500336445 /* CustomNavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarView.xib; sourceTree = "<group>"; };
 		3621927D2240D3F600336445 /* CustomNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarView.swift; sourceTree = "<group>"; };
 		362192802240D9DE00336445 /* InformationUserAccountPayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationUserAccountPayView.xib; sourceTree = "<group>"; };
@@ -150,6 +155,11 @@
 		367E09F1223B4DBE0095680E /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		3686D9EB2243295900123082 /* BaseTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTutorialViewController.swift; sourceTree = "<group>"; };
 		3686D9EE2243324200123082 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3686D9F0224366B400123082 /* AddPayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPayoutTableViewController.swift; sourceTree = "<group>"; };
+		3686D9F32243672F00123082 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		3686D9F52243674200123082 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3686D9F8224376E400123082 /* AddNewPayoutTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewPayoutTableViewController.storyboard; sourceTree = "<group>"; };
+		3686D9FA2243770200123082 /* AddNewPayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPayoutTableViewController.swift; sourceTree = "<group>"; };
 		36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		36E170CE223B5FE8007BE333 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		36E170D0223B618F007BE333 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -232,7 +242,8 @@
 		362192772240D35900336445 /* AddPayout */ = {
 			isa = PBXGroup;
 			children = (
-				362192782240D37600336445 /* AddPayoutViewController.storyboard */,
+				362192782240D37600336445 /* AddPayoutTableViewController.storyboard */,
+				3686D9F0224366B400123082 /* AddPayoutTableViewController.swift */,
 			);
 			path = AddPayout;
 			sourceTree = "<group>";
@@ -326,6 +337,7 @@
 		367E09E6223B4B550095680E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3686D9F2224366FF00123082 /* CardView */,
 				3621927F2240D98700336445 /* InformationUserAccountPay */,
 				3621927A2240D3AC00336445 /* CustomNavigationBar */,
 				36E170DE223B9B35007BE333 /* Email */,
@@ -366,6 +378,24 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		3686D9F2224366FF00123082 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				3686D9F32243672F00123082 /* CardView.xib */,
+				3686D9F52243674200123082 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		3686D9F7224376B100123082 /* AddNewPayout */ = {
+			isa = PBXGroup;
+			children = (
+				3686D9F8224376E400123082 /* AddNewPayoutTableViewController.storyboard */,
+				3686D9FA2243770200123082 /* AddNewPayoutTableViewController.swift */,
+			);
+			path = AddNewPayout;
+			sourceTree = "<group>";
+		};
 		36E170D4223B7C1C007BE333 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +417,7 @@
 		36E170D6223B7C3C007BE333 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				3686D9F7224376B100123082 /* AddNewPayout */,
 				362192772240D35900336445 /* AddPayout */,
 				362192712240A2D900336445 /* Active */,
 				36E170D2223B7BBA007BE333 /* SignUpViewController.storyboard */,
@@ -536,9 +567,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				360D705522422EC0009F2B5C /* SourceSansPro-It.otf in Resources */,
+				3686D9F42243672F00123082 /* CardView.xib in Resources */,
 				360D703D22422EC0009F2B5C /* SourceSansPro-BlackIt.otf in Resources */,
 				367E09E8223B4B760095680E /* NavigationBarView.xib in Resources */,
-				362192792240D37600336445 /* AddPayoutViewController.storyboard in Resources */,
+				362192792240D37600336445 /* AddPayoutTableViewController.storyboard in Resources */,
 				360D704C22422EC0009F2B5C /* SourceSansPro-BoldIt.otf in Resources */,
 				363053C5223A41E30028715F /* RegisterViewController.storyboard in Resources */,
 				36E170EA223BACBA007BE333 /* StartViewController.storyboard in Resources */,
@@ -561,6 +593,7 @@
 				367E09E5223B4AAB0095680E /* LoginViewController.storyboard in Resources */,
 				3630539D223A41AB0028715F /* Assets.xcassets in Resources */,
 				360D704322422EC0009F2B5C /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				3686D9F9224376E400123082 /* AddNewPayoutTableViewController.storyboard in Resources */,
 				360D704622422EC0009F2B5C /* SourceSansPro-SemiboldIt.otf in Resources */,
 				3630539B223A41A80028715F /* Main.storyboard in Resources */,
 			);
@@ -611,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3686D9FB2243770200123082 /* AddNewPayoutTableViewController.swift in Sources */,
 				36E170E2223B9B5E007BE333 /* EmailView.swift in Sources */,
 				36E170D8223B7C63007BE333 /* SignUpViewController.swift in Sources */,
 				3686D9EC2243295900123082 /* BaseTutorialViewController.swift in Sources */,
@@ -621,9 +655,11 @@
 				36E170EC223BACCC007BE333 /* StartViewController.swift in Sources */,
 				367E09E3223B4A030095680E /* RegisterViewController.swift in Sources */,
 				36305398223A41A80028715F /* ViewController.swift in Sources */,
+				3686D9F1224366B400123082 /* AddPayoutTableViewController.swift in Sources */,
 				3621927E2240D3F600336445 /* CustomNavigationBarView.swift in Sources */,
 				362192832240D9ED00336445 /* InformationUserAccountPayView.swift in Sources */,
 				3621926F224091D400336445 /* PageViewController.swift in Sources */,
+				3686D9F62243674200123082 /* CardView.swift in Sources */,
 				360D702D224228E4009F2B5C /* NSMutableAttributedString+Extension.swift in Sources */,
 				367E09EA223B4B970095680E /* NavigationBarView.swift in Sources */,
 				36E170E7223BA08B007BE333 /* ForgotPasswordViewController.swift in Sources */,

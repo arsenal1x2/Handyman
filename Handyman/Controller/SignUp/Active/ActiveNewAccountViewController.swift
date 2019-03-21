@@ -25,4 +25,12 @@ class ActiveNewAccountViewController: UIViewController {
         privateUserButton.applyCornerRadius()
         navigationBarView.delegate = self
     }
+    @IBAction func clickPrivateUserButton(_ sender: Any) {
+        let vc = AddPayoutTableViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func clickBusinessUsersButton(_ sender: Any) {
+        let vc = AddNewPayoutTableViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

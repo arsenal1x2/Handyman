@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="Handyman" customModuleProvider="target">
+            <connections>
+                <outlet property="cardImageView" destination="GdW-Wp-gNW" id="ZWR-UZ-yEN"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0mI-bx-rmW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PCw-Nw-3NV">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjX-EM-Gwx">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="133"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="GdW-Wp-gNW">
+                                    <rect key="frame" x="76.5" y="0.0" width="191" height="133"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="GdW-Wp-gNW" secondAttribute="height" multiplier="191:133" id="kX1-u3-aTt"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="133" id="4tk-Kc-xwn"/>
+                                <constraint firstItem="GdW-Wp-gNW" firstAttribute="centerX" secondItem="ZjX-EM-Gwx" secondAttribute="centerX" id="AjD-o5-yTl"/>
+                                <constraint firstItem="GdW-Wp-gNW" firstAttribute="height" secondItem="ZjX-EM-Gwx" secondAttribute="height" id="Aua-ZM-sGU"/>
+                                <constraint firstItem="GdW-Wp-gNW" firstAttribute="centerY" secondItem="ZjX-EM-Gwx" secondAttribute="centerY" id="HYc-Z7-TGj"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To active your account with CVR number that you have to add payout first and pay $5 / per month" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycm-qk-M6W">
+                            <rect key="frame" x="0.0" y="143" width="345" height="37"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZjX-EM-Gwx" secondAttribute="trailing" id="3rO-Rp-Oue"/>
+                        <constraint firstItem="ZjX-EM-Gwx" firstAttribute="leading" secondItem="PCw-Nw-3NV" secondAttribute="leading" id="7o0-II-1bb"/>
+                        <constraint firstItem="ZjX-EM-Gwx" firstAttribute="top" secondItem="PCw-Nw-3NV" secondAttribute="top" id="DHL-x8-fVY"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PCw-Nw-3NV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FeK-JT-Luw"/>
+                <constraint firstAttribute="bottom" secondItem="PCw-Nw-3NV" secondAttribute="bottom" id="YUO-7n-DFN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PCw-Nw-3NV" secondAttribute="trailing" id="s38-uZ-h2p"/>
+                <constraint firstItem="PCw-Nw-3NV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z2U-xf-ARZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="94.5" y="65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card" width="191" height="133"/>
+    </resources>
+</document>

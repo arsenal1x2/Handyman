@@ -16,7 +16,18 @@ class RootViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // navigationBar.barTintColor = UIColor(hexString: "293551")
+       
+        self.navigationController?.navigationBar.shadowImage = nil
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.navigationBar.shadowImage = nil
+        
     }
 }
