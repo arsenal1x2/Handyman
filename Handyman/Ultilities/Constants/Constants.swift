@@ -12,4 +12,5 @@ struct Constants {
     struct UserDefaultkeys {
         static var IsSeenTutorialViewController = "isSeenTutorialViewController"
     }
+    static var isPrivateUser = false
 }

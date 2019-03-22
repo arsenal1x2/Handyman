@@ -34,7 +34,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="345" height="133"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="GdW-Wp-gNW">
-                                    <rect key="frame" x="76.5" y="0.0" width="191" height="133"/>
+                                    <rect key="frame" x="77" y="0.0" width="191" height="133"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="GdW-Wp-gNW" secondAttribute="height" multiplier="191:133" id="kX1-u3-aTt"/>
                                     </constraints>

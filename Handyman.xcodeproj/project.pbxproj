@@ -62,6 +62,10 @@
 		363053AB223A41AB0028715F /* HandymanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363053AA223A41AB0028715F /* HandymanTests.swift */; };
 		363053B6223A41AB0028715F /* HandymanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363053B5223A41AB0028715F /* HandymanUITests.swift */; };
 		363053C5223A41E30028715F /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363053C4223A41E30028715F /* RegisterViewController.storyboard */; };
+		366328BF2244898B00E82CBA /* ActivePayoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366328BE2244898B00E82CBA /* ActivePayoutViewController.storyboard */; };
+		366328C12244899F00E82CBA /* ActivePayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366328C02244899F00E82CBA /* ActivePayoutViewController.swift */; };
+		366328C4224496FF00E82CBA /* FillPayoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366328C3224496FF00E82CBA /* FillPayoutViewController.storyboard */; };
+		366328C62244971300E82CBA /* FillPayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366328C52244971300E82CBA /* FillPayoutViewController.swift */; };
 		367E09E3223B4A030095680E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E09E2223B4A030095680E /* RegisterViewController.swift */; };
 		367E09E5223B4AAB0095680E /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367E09E4223B4AAB0095680E /* LoginViewController.storyboard */; };
 		367E09E8223B4B760095680E /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367E09E7223B4B760095680E /* NavigationBarView.xib */; };
@@ -76,6 +80,8 @@
 		3686D9F62243674200123082 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9F52243674200123082 /* CardView.swift */; };
 		3686D9F9224376E400123082 /* AddNewPayoutTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3686D9F8224376E400123082 /* AddNewPayoutTableViewController.storyboard */; };
 		3686D9FB2243770200123082 /* AddNewPayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686D9FA2243770200123082 /* AddNewPayoutTableViewController.swift */; };
+		3686D9FF2243969B00123082 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3686D9FE2243969B00123082 /* DatePickerView.xib */; };
+		3686DA01224396B000123082 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3686DA00224396B000123082 /* DatePickerView.swift */; };
 		36E170CD223B4EF9007BE333 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */; };
 		36E170CF223B5FE8007BE333 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170CE223B5FE8007BE333 /* LoginViewController.swift */; };
 		36E170D1223B618F007BE333 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E170D0223B618F007BE333 /* RootViewController.swift */; };
@@ -146,6 +152,10 @@
 		363053B5223A41AB0028715F /* HandymanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandymanUITests.swift; sourceTree = "<group>"; };
 		363053B7223A41AB0028715F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363053C4223A41E30028715F /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		366328BE2244898B00E82CBA /* ActivePayoutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivePayoutViewController.storyboard; sourceTree = "<group>"; };
+		366328C02244899F00E82CBA /* ActivePayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePayoutViewController.swift; sourceTree = "<group>"; };
+		366328C3224496FF00E82CBA /* FillPayoutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FillPayoutViewController.storyboard; sourceTree = "<group>"; };
+		366328C52244971300E82CBA /* FillPayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillPayoutViewController.swift; sourceTree = "<group>"; };
 		367E09E2223B4A030095680E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		367E09E4223B4AAB0095680E /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		367E09E7223B4B760095680E /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
@@ -160,6 +170,8 @@
 		3686D9F52243674200123082 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3686D9F8224376E400123082 /* AddNewPayoutTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewPayoutTableViewController.storyboard; sourceTree = "<group>"; };
 		3686D9FA2243770200123082 /* AddNewPayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPayoutTableViewController.swift; sourceTree = "<group>"; };
+		3686D9FE2243969B00123082 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		3686DA00224396B000123082 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		36E170CC223B4EF9007BE333 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		36E170CE223B5FE8007BE333 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		36E170D0223B618F007BE333 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +247,8 @@
 			children = (
 				362192722240A2F300336445 /* ActiveNewAccountViewController.storyboard */,
 				362192742240A30F00336445 /* ActiveNewAccountViewController.swift */,
+				366328BE2244898B00E82CBA /* ActivePayoutViewController.storyboard */,
+				366328C02244899F00E82CBA /* ActivePayoutViewController.swift */,
 			);
 			path = Active;
 			sourceTree = "<group>";
@@ -334,9 +348,19 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		366328C2224496AE00E82CBA /* FillPayout */ = {
+			isa = PBXGroup;
+			children = (
+				366328C3224496FF00E82CBA /* FillPayoutViewController.storyboard */,
+				366328C52244971300E82CBA /* FillPayoutViewController.swift */,
+			);
+			path = FillPayout;
+			sourceTree = "<group>";
+		};
 		367E09E6223B4B550095680E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3686D9FC2243967300123082 /* DatePicker */,
 				3686D9F2224366FF00123082 /* CardView */,
 				3621927F2240D98700336445 /* InformationUserAccountPay */,
 				3621927A2240D3AC00336445 /* CustomNavigationBar */,
@@ -396,6 +420,15 @@
 			path = AddNewPayout;
 			sourceTree = "<group>";
 		};
+		3686D9FC2243967300123082 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3686D9FE2243969B00123082 /* DatePickerView.xib */,
+				3686DA00224396B000123082 /* DatePickerView.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		36E170D4223B7C1C007BE333 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +450,7 @@
 		36E170D6223B7C3C007BE333 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				366328C2224496AE00E82CBA /* FillPayout */,
 				3686D9F7224376B100123082 /* AddNewPayout */,
 				362192772240D35900336445 /* AddPayout */,
 				362192712240A2D900336445 /* Active */,
@@ -585,17 +619,20 @@
 				3621927C2240D3D500336445 /* CustomNavigationBarView.xib in Resources */,
 				360D702F22422E62009F2B5C /* SourceSansPro-Semibold.otf in Resources */,
 				36E170E0223B9B46007BE333 /* EmailView.xib in Resources */,
+				3686D9FF2243969B00123082 /* DatePickerView.xib in Resources */,
 				36E170E5223BA01E007BE333 /* ForgotPasswordViewController.storyboard in Resources */,
 				36E170DA223B9439007BE333 /* PasswordView.xib in Resources */,
 				362192812240D9DE00336445 /* InformationUserAccountPayView.xib in Resources */,
 				362192732240A2F300336445 /* ActiveNewAccountViewController.storyboard in Resources */,
 				360D705B22422EC0009F2B5C /* SourceSansPro-Bold.otf in Resources */,
+				366328BF2244898B00E82CBA /* ActivePayoutViewController.storyboard in Resources */,
 				367E09E5223B4AAB0095680E /* LoginViewController.storyboard in Resources */,
 				3630539D223A41AB0028715F /* Assets.xcassets in Resources */,
 				360D704322422EC0009F2B5C /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				3686D9F9224376E400123082 /* AddNewPayoutTableViewController.storyboard in Resources */,
 				360D704622422EC0009F2B5C /* SourceSansPro-SemiboldIt.otf in Resources */,
 				3630539B223A41A80028715F /* Main.storyboard in Resources */,
+				366328C4224496FF00E82CBA /* FillPayoutViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +689,7 @@
 				36E170CF223B5FE8007BE333 /* LoginViewController.swift in Sources */,
 				367E09F2223B4DBE0095680E /* UIVIewController+Extension.swift in Sources */,
 				3686D9EF2243324200123082 /* Constants.swift in Sources */,
+				366328C12244899F00E82CBA /* ActivePayoutViewController.swift in Sources */,
 				36E170EC223BACCC007BE333 /* StartViewController.swift in Sources */,
 				367E09E3223B4A030095680E /* RegisterViewController.swift in Sources */,
 				36305398223A41A80028715F /* ViewController.swift in Sources */,
@@ -664,7 +702,9 @@
 				367E09EA223B4B970095680E /* NavigationBarView.swift in Sources */,
 				36E170E7223BA08B007BE333 /* ForgotPasswordViewController.swift in Sources */,
 				3621926D2240875F00336445 /* TutorialViewController.swift in Sources */,
+				366328C62244971300E82CBA /* FillPayoutViewController.swift in Sources */,
 				36E170DC223B9452007BE333 /* PasswordView.swift in Sources */,
+				3686DA01224396B000123082 /* DatePickerView.swift in Sources */,
 				362192752240A30F00336445 /* ActiveNewAccountViewController.swift in Sources */,
 				367E09EE223B4CD80095680E /* UIView+Extension.swift in Sources */,
 				36305396223A41A80028715F /* AppDelegate.swift in Sources */,

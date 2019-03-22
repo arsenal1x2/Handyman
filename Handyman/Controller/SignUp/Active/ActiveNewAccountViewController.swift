@@ -12,7 +12,7 @@ class ActiveNewAccountViewController: UIViewController {
 
     @IBOutlet weak var businessUsersButton: UIButton!
     @IBOutlet weak var privateUserButton: UIButton!
-    @IBOutlet weak var navigationBarView: NavigationBarView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initViews()
@@ -23,14 +23,16 @@ class ActiveNewAccountViewController: UIViewController {
     func initViews() {
         businessUsersButton.applyCornerRadius()
         privateUserButton.applyCornerRadius()
-        navigationBarView.delegate = self
+        
     }
     @IBAction func clickPrivateUserButton(_ sender: Any) {
+        Constants.isPrivateUser = true
         let vc = AddPayoutTableViewController.instantiateFromStoryboard()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func clickBusinessUsersButton(_ sender: Any) {
-        let vc = AddNewPayoutTableViewController.instantiateFromStoryboard()
+        Constants.isPrivateUser = false
+        let vc = AddPayoutTableViewController.instantiateFromStoryboard()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -10,23 +10,33 @@ import UIKit
 
 class AddNewPayoutTableViewController: UITableViewController {
 
+    @IBOutlet weak var countryView: DatePickerView!
+    @IBOutlet weak var accountRoutingView: InformationUserAccountPayView!
+    @IBOutlet weak var accountNumberView: InformationUserAccountPayView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViews()
     }
-    // MARK: - Table view data source
+   
+    private func initViews() {
+        countryView.icon.image = UIImage(named: "dropdown")
+        countryView.titleLabel.text = "Country"
+        accountNumberView.label.text = "Account Number"
+        accountRoutingView.label.text = "Account Routing"
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
-
+    @IBAction func clickCkeckmarkButton(_ sender: Any) {
+        let vc = FillPayoutViewController.instantiateFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        switch section {
-        case 0:
-            return 1
-        default:
-            return 3
-        }
+        return 3
     }
  }

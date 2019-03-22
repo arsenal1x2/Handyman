@@ -6,11 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add New Payout Table View Controller-->
+        <!--Add new payout-->
         <scene sceneID="glf-aO-Axg">
             <objects>
                 <tableViewController storyboardIdentifier="AddNewPayoutTableViewController" id="kZ7-Jx-Wav" customClass="AddNewPayoutTableViewController" customModule="Handyman" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,35 +20,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection id="3dw-BW-Cyh">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="210" id="X2D-eN-vlZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X2D-eN-vlZ" id="Kci-p6-yVV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFI-Qt-g8L" customClass="CardView" customModule="Handyman" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="11" width="343" height="188"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
-                                            </subviews>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Yk7-S7-2um">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5p-qy-3g8">
+                                    <rect key="frame" x="14.5" y="8.5" width="345" height="133"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-02-Sd6">
+                                            <rect key="frame" x="75" y="0.0" width="195" height="133"/>
                                             <constraints>
-                                                <constraint firstItem="mFI-Qt-g8L" firstAttribute="leading" secondItem="Kci-p6-yVV" secondAttribute="leadingMargin" id="9Uw-BM-c3Z"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mFI-Qt-g8L" secondAttribute="trailing" id="V4w-3C-X4r"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mFI-Qt-g8L" secondAttribute="bottom" id="r80-52-YL8"/>
-                                                <constraint firstItem="mFI-Qt-g8L" firstAttribute="top" secondItem="Kci-p6-yVV" secondAttribute="topMargin" id="ylr-Yi-mFS"/>
+                                                <constraint firstAttribute="width" secondItem="K8l-02-Sd6" secondAttribute="height" multiplier="195:133" id="EwC-mr-i8Z"/>
                                             </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="K8l-02-Sd6" firstAttribute="centerY" secondItem="O5p-qy-3g8" secondAttribute="centerY" id="SSs-Ro-qq2"/>
+                                        <constraint firstItem="K8l-02-Sd6" firstAttribute="top" secondItem="O5p-qy-3g8" secondAttribute="top" id="ifu-97-bQk"/>
+                                        <constraint firstAttribute="bottom" secondItem="K8l-02-Sd6" secondAttribute="bottom" id="mjC-RO-hZa"/>
+                                        <constraint firstAttribute="height" constant="133" id="oH5-Fs-x16"/>
+                                        <constraint firstItem="K8l-02-Sd6" firstAttribute="centerX" secondItem="O5p-qy-3g8" secondAttribute="centerX" id="qGj-uo-EDx"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="O5p-qy-3g8" firstAttribute="centerY" secondItem="Yk7-S7-2um" secondAttribute="centerY" id="L8u-b9-HRq"/>
+                                <constraint firstItem="O5p-qy-3g8" firstAttribute="centerY" secondItem="Yk7-S7-2um" secondAttribute="centerY" id="VpV-xI-kPb"/>
+                                <constraint firstItem="O5p-qy-3g8" firstAttribute="centerX" secondItem="Yk7-S7-2um" secondAttribute="centerX" id="WNR-Zj-xw4"/>
+                                <constraint firstItem="O5p-qy-3g8" firstAttribute="width" secondItem="Yk7-S7-2um" secondAttribute="width" multiplier="345:375" id="aC5-2Y-N3r"/>
+                                <constraint firstItem="O5p-qy-3g8" firstAttribute="centerX" secondItem="Yk7-S7-2um" secondAttribute="centerX" id="nxd-od-MeP"/>
+                            </constraints>
+                        </view>
+                        <sections>
                             <tableViewSection id="iUq-qW-Ws8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="R1M-mI-wVc">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="150" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R1M-mI-wVc" id="Koh-CP-DYx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
@@ -66,7 +77,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="Us7-2s-cnZ">
-                                        <rect key="frame" x="0.0" y="282" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="222" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Us7-2s-cnZ" id="4Hb-zt-Dil">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
@@ -86,13 +97,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="h3M-05-JhP">
-                                        <rect key="frame" x="0.0" y="354" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="294" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h3M-05-JhP" id="4it-3N-9rd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PF-55-kz3" customClass="InformationUserAccountPayView" customModule="Handyman" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PF-55-kz3" customClass="DatePickerView" customModule="Handyman" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="11" width="343" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
@@ -113,10 +124,45 @@
                             <outlet property="delegate" destination="kZ7-Jx-Wav" id="46b-vt-v2M"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Add new payout" id="ehU-cl-kNV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="dck-Vl-I3I"/>
+                        <barButtonItem key="rightBarButtonItem" image="icons8-checkmark-filled-81" id="uFW-sn-f2T">
+                            <connections>
+                                <action selector="clickCkeckmarkButton:" destination="kZ7-Jx-Wav" id="i0U-yn-dhv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="accountNumberView" destination="jXe-QE-dAi" id="fHH-YS-0qU"/>
+                        <outlet property="accountRoutingView" destination="GuP-ch-fat" id="VV5-B2-dWF"/>
+                        <outlet property="countryView" destination="2PF-55-kz3" id="9zp-b7-DbA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IyE-Oy-trd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="265"/>
+            <point key="canvasLocation" x="1068" y="264.91754122938534"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lgG-NQ-3Qh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7c4-C0-Xkg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ndr-Ob-BEf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kZ7-Jx-Wav" kind="relationship" relationship="rootViewController" id="6je-cc-Vqg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTk-P1-YSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="264.91754122938534"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="card" width="191" height="133"/>
+        <image name="icons8-checkmark-filled-81" width="27" height="27"/>
+    </resources>
 </document>

@@ -11,7 +11,6 @@ import UIKit
 class ForgotPasswordViewController: UIViewController {
 
     @IBOutlet weak var emailView: EmailView!
-    @IBOutlet weak var navigationBarView: NavigationBarView!
     @IBOutlet weak var sendButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -25,7 +24,7 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     private func initView() {
-        navigationBarView.delegate = self
+        
         sendButton.applyCornerRadius()
         self.addNotificationKeyBoard()
     }

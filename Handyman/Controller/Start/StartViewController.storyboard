@@ -29,16 +29,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="caj-sM-yKh">
-                                <rect key="frame" x="15" y="68" width="345" height="60"/>
+                                <rect key="frame" x="15" y="68" width="345" height="62.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvF-4x-WZS">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="28"/>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="24"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to handyman. Please choose one of this option. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP5-Nu-HPv">
-                                        <rect key="frame" x="0.0" y="42" width="345" height="18"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="345" height="18"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -46,13 +46,13 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-OB-0jD">
-                                <rect key="frame" x="112.5" y="158" width="150" height="150.5"/>
+                                <rect key="frame" x="112.5" y="160.5" width="150" height="150.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="f2Z-OB-0jD" secondAttribute="height" multiplier="1:1" id="m70-Ua-IA1"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QAw-7J-4Km">
-                                <rect key="frame" x="65.5" y="338.5" width="244" height="106.5"/>
+                                <rect key="frame" x="65.5" y="341" width="244" height="106.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-gh-Se1">
                                         <rect key="frame" x="0.0" y="0.0" width="244" height="38.5"/>
